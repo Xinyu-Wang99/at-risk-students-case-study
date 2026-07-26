@@ -1,2 +1,39 @@
-# at-risk-students-case-study
-A Business Analytics case study exploring the early identification of at-risk students through data analysis and predictive modeling.
+# Early Identification of At-Risk Students
+
+*A Business Analytics Case Study for Educational Decision Support*
+
+---
+
+## Executive Summary
+
+---
+
+## Business Problem
+
+---
+
+## Project Objectives
+
+---
+
+## Dataset
+
+---
+
+## Methodology
+
+---
+
+## Key Findings
+
+---
+
+## Business Recommendations
+
+---
+
+## Repository Structure
+
+---
+
+## Future Improvements
