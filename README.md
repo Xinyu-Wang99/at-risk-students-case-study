@@ -6,23 +6,23 @@
 
 ## Project Overview
 
-This project analyzes student academic performance using data analytics and machine learning to identify students at risk before the end of the semester.
+Early identification of students at academic risk allows schools to provide timely support before poor performance becomes irreversible.
 
-Starting from a real business problem in the education domain, the project combines exploratory data analysis (EDA), predictive modeling, and business insights to support early intervention and resource allocation.
+This case study applies business analytics and machine learning to predict at-risk students before the end of the semester. Through exploratory data analysis, predictive modeling, and business interpretation, the project demonstrates how data can support educational decision-making and improve resource allocation.
 
-Rather than focusing only on model accuracy, the project emphasizes how data can support practical decision-making for school administrators.
+Rather than pursuing the highest possible model accuracy, the focus is on generating insights that school administrators can use in practice.
 
 ---
 
 ## Business Problem
 
-Schools often identify struggling students only after the final exam, leaving little opportunity for timely intervention.
+Schools often identify struggling students only after final grades are released, leaving little opportunity for effective intervention.
 
-This project aims to answer an important business question:
+This project addresses the following business question:
 
-> Can we identify students who are at risk before the end of the semester so that schools can provide timely support?
+> **Can students at risk be identified before the end of the semester so that schools can provide timely support?**
 
-The goal is not simply to build a predictive model, but to help decision-makers allocate educational resources more effectively.
+Instead of building a model for prediction alone, the goal is to help decision-makers allocate educational resources earlier and more effectively.
 
 ---
 
@@ -43,9 +43,9 @@ The objectives of this project are to:
 
 ## Dataset
 
-This project uses the **Student Performance Dataset**, originally published by the **UCI Machine Learning Repository (UCI ML Repository)** and accessed through the **Kaggle UCI ML Repository mirror**.
+The analysis is based on the **Student Performance Dataset**, originally published by the **UCI Machine Learning Repository (UCI ML Repository)** and accessed through the **Kaggle UCI ML Repository mirror**.
 
-The dataset contains **649 Portuguese secondary school students** and **33 variables**, covering:
+The dataset includes **649 Portuguese secondary school students** and **33 variables** covering:
 
 - Student demographics
 - Family background
@@ -54,13 +54,13 @@ The dataset contains **649 Portuguese secondary school students** and **33 varia
 - Lifestyle factors
 - Final academic performance (G3)
 
-To support early intervention from a business perspective, this project redefines the prediction target as:
+To better support educational decision-making, the original prediction target was redefined as:
 
 > **At-risk Student = Final Grade (G3) ≤ 12**
 
-This transformation converts the original regression problem into a binary classification task, allowing schools to identify students who may require additional academic support before the end of the semester.
+This transforms the original regression problem into a binary classification task, allowing schools to identify students who may need academic support before the semester ends.
 
-The dataset contains no missing values and provides rich academic, demographic, and behavioral information, making it well suited for educational analytics and predictive modeling.
+The dataset contains no missing values and includes a broad range of academic, demographic, and behavioral variables, making it well suited for educational analytics and predictive modeling.
 
 **Source**
 
@@ -71,8 +71,7 @@ The dataset contains no missing values and provides rich academic, demographic, 
 
 ## Methodology
 
-The project follows a structured Business Analytics workflow, moving from problem definition to actionable business recommendations through data-driven analysis.
-
+The analysis follows a Business Analytics workflow, starting from problem identification and ending with actionable recommendations for decision-makers.
 
 ```mermaid
 flowchart TD
@@ -96,25 +95,25 @@ Students with a history of academic failures consistently showed a significantly
 
 ### 2. Study habits and educational aspirations were positively associated with student performance.
 
-Students who spent more time studying and planned to pursue higher education generally achieved better final grades, suggesting that both academic behavior and motivation play important roles in learning outcomes.
+Students who spent more time studying and planned to pursue higher education generally achieved better final grades, suggesting that both academic behavior and learning motivation contribute to academic success.
 
 ---
 
-### 3. Logistic Regression achieved the best overall performance for identifying at-risk students.
+### 3. Logistic Regression delivered the best overall performance for identifying at-risk students.
 
-Among the evaluated models, Logistic Regression provided the most balanced performance, achieving:
+Among the evaluated models, Logistic Regression achieved the most balanced performance:
 
 - Accuracy: **66.9%**
 - Recall: **68.5%**
 - F1-score: **69.9%**
 
-making it the most suitable model for early identification of at-risk students in this project.
+These results make it the most appropriate model for early identification within the scope of this project.
 
 ---
 
 ### 4. Student risk can be identified before the end of the semester, enabling earlier educational intervention.
 
-By combining student demographic, family, and academic information, schools can identify students who may require additional support before final grades are released, allowing educational resources to be allocated more proactively.
+Combining demographic, family, and academic information allows schools to recognize students who may require additional support before final grades are released, making proactive intervention and resource allocation possible.
 
 ---
 
@@ -124,7 +123,7 @@ Based on the analytical findings, schools should:
 
 - Identify at-risk students as early as possible using predictive models.
 - Prioritize students with previous academic failures for early intervention.
-- Work with teachers and parents to understand individual learning challenges.
+- Work with teachers and parents to better understand individual learning challenges.
 - Provide targeted support, such as tutoring, counseling, or personalized learning plans, before academic performance declines further.
 
 ---
