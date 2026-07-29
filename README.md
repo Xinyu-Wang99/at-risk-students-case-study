@@ -153,3 +153,10 @@ early-identification-at-risk-students/
 ---
 
 ## Future Improvements
+
+There are several ways this project could be expanded in the future.
+
+- Include additional data, such as attendance patterns, behavioral records, or learning engagement, to better identify students at risk.
+- Test the models on data from different schools or academic years to see whether the results remain consistent.
+- Build an interactive dashboard so school administrators can monitor at-risk students and support earlier interventions.
+- Examine whether early interventions actually improve student outcomes and use the results to refine future support strategies.
