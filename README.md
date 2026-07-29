@@ -6,41 +6,41 @@
 
 ## Project Overview
 
-Schools often identify struggling students only after final grades are released, leaving little opportunity for effective intervention.
+Schools often identify struggling students only after final grades are released, leaving little time for effective intervention.
 
-This project explores whether students at academic risk can be identified before the end of the semester to support earlier and more effective educational decisions.
+This study examines whether at-risk students can be identified before the end of the semester, giving schools more time to provide support.
 
 ---
 
 ## Business Problem
 
-Schools need to identify students who require additional academic support before final grades are released.
+Schools need a way to identify students who may need additional support before final grades are released.
 
 > **Business Question**
 >
 > Can students at risk be identified before the end of the semester so that schools can provide timely support?
 
-The goal is to support earlier intervention and help school administrators allocate educational resources more effectively.
+Early identification allows schools to intervene sooner and better prioritize support.
 
 ---
 
 ## Executive Summary
 
-This project explored whether students at academic risk can be identified before the end of the semester using historical student data.
+Historical student data was used to examine whether at-risk students could be identified before the end of the semester.
 
-The analysis found that previous academic failures, study habits, and educational aspirations were the strongest indicators of academic risk. Among the evaluated models, Logistic Regression achieved the most balanced overall performance for early identification.
+Previous academic failures, study habits, and educational aspirations emerged as the strongest indicators of academic risk. Logistic Regression delivered the most balanced performance among the evaluated models.
 
-These findings suggest that schools can identify at-risk students earlier and provide more targeted academic support before final grades are released.
+The results show that schools can identify at-risk students earlier and provide more targeted support before final grades are released.
 
 ---
 
 ## Project Objectives
 
-This project aims to:
+The project aims to:
 
 - Identify students at academic risk before the end of the semester.
 - Explore the key factors associated with student performance through exploratory data analysis.
-- Develop predictive models for early risk identification.
+- Develop predictive models to identify at-risk students earlier.
 - Translate analytical findings into actionable recommendations for school administrators.
 
 ---
@@ -63,7 +63,7 @@ For this project, the target variable was redefined as:
 
 > **At-risk Student = Final Grade (G3) ≤ 12**
 
-This converts the original regression task into a binary classification problem, allowing earlier identification of students who may require additional academic support.
+The new target converts the original regression task into a binary classification problem, allowing earlier identification of students who may require additional academic support.
 
 **Source**
 
@@ -74,7 +74,7 @@ This converts the original regression task into a binary classification problem,
 
 ## Methodology
 
-The overall workflow is illustrated below.
+The workflow is shown below.
 
 ```mermaid
 flowchart TD
@@ -92,17 +92,17 @@ flowchart TD
 
 ### Previous Academic Failures
 
-Students with previous academic failures were consistently more likely to become at-risk students.
+Students with previous academic failures were consistently more likely to be at risk.
 
-This factor showed the strongest relationship with academic risk across both exploratory analysis and predictive modeling.
+This was the strongest predictor across both exploratory analysis and predictive modeling.
 
 ---
 
 ### Study Habits & Educational Aspirations
 
-Students who studied more and planned to pursue higher education generally achieved better academic outcomes.
+Students who studied more and planned to pursue higher education generally performed better.
 
-These factors suggest that both learning behavior and motivation play an important role in academic performance.
+The results suggest that both study habits and motivation contribute to academic success.
 
 ---
 
@@ -116,25 +116,25 @@ These factors suggest that both learning behavior and motivation play an importa
 | Recall | 68.5% |
 | F1-score | 69.9% |
 
-Logistic Regression achieved the most balanced performance among the evaluated models for early identification of at-risk students.
+Logistic Regression delivered the most balanced performance among the evaluated models.
 
 ---
 
 ### Business Impact
 
-The analysis shows that students at academic risk can be identified before final grades are released.
+Students at academic risk can be identified before final grades are released.
 
-Earlier identification allows schools to prioritize support and intervene before academic performance declines further.
+Earlier identification gives schools more time to provide targeted support.
 
 ---
 
 ## Business Recommendations
 
-Based on the findings, the following actions are recommended:
+Recommended actions:
 
 - Identify at-risk students as early as possible using predictive models.
 - Prioritize students with previous academic failures for early intervention.
-- Collaborate with teachers and parents to better understand individual learning needs.
+- Work with teachers and parents to better understand each student's needs.
 - Provide targeted support, such as tutoring, counseling, or personalized learning plans.
 
 ---
@@ -159,7 +159,7 @@ early-identification-at-risk-students/
 
 ## Future Improvements
 
-Future work could further improve the project by:
+Possible next steps:
 
 - Incorporating additional data, such as attendance records or learning engagement.
 - Validating the models using data from different schools or academic years.
@@ -168,7 +168,7 @@ Future work could further improve the project by:
 
 ---
 
-## Skills Applied
+## Skills & Tools
 
 - Python (Pandas, Scikit-learn)
 - Exploratory Data Analysis (EDA)
