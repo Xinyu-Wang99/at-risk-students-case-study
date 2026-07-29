@@ -160,3 +160,15 @@ There are several ways this project could be expanded in the future.
 - Test the models on data from different schools or academic years to see whether the results remain consistent.
 - Build an interactive dashboard so school administrators can monitor at-risk students and support earlier interventions.
 - Examine whether early interventions actually improve student outcomes and use the results to refine future support strategies.
+
+---
+
+## Skills Applied
+
+- Business Analytics
+- Exploratory Data Analysis (EDA)
+- Predictive Modeling
+- Machine Learning
+- Business Storytelling
+- Python (Pandas, Scikit-learn)
+- Data Visualization
