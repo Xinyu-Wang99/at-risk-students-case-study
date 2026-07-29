@@ -1,6 +1,6 @@
 # Early Identification of At-Risk Students
 
-*A Business Analytics Case Study for Educational Decision Support*
+*Predicting Academic Risk Before Final Exams*
 
 ---
 
