@@ -28,6 +28,12 @@ Instead of building a model for prediction alone, the goal is to help decision-m
 
 ## Executive Summary
 
+Schools often identify struggling students only after final grades are released, leaving little time for effective intervention. This project explores whether students at academic risk can be identified earlier using historical student data.
+
+The analysis combines exploratory data analysis with predictive modeling to identify students who may need additional support before the end of the semester. The results indicate that previous academic failures, study habits, and educational aspirations are closely associated with academic risk.
+
+Rather than focusing only on model performance, this project emphasizes how analytical findings can support practical decisions. By identifying at-risk students earlier, schools can prioritize resources and provide timely interventions.
+
 ---
 
 ## Project Objectives
@@ -129,6 +135,20 @@ Based on the analytical findings, schools should:
 ---
 
 ## Repository Structure
+
+```text
+early-identification-at-risk-students/
+│
+├── README.md
+├── early_identification_at_risk_students.ipynb
+└── student-por.csv
+```
+
+| File | Description |
+|------|-------------|
+| `README.md` | Project overview, methodology, key findings, and business recommendations. |
+| `early_identification_at_risk_students.ipynb` | Complete Business Analytics workflow, including EDA, predictive modeling, model evaluation, and business insights. |
+| `student-por.csv` | Original dataset used for analysis. |
 
 ---
 
