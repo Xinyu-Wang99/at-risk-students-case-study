@@ -6,67 +6,64 @@
 
 ## Project Overview
 
-Early identification of students at academic risk allows schools to provide timely support before poor performance becomes irreversible.
+Schools often identify struggling students only after final grades are released, leaving little opportunity for effective intervention.
 
-This case study applies business analytics and machine learning to predict at-risk students before the end of the semester. Through exploratory data analysis, predictive modeling, and business interpretation, the project demonstrates how data can support educational decision-making and improve resource allocation.
-
-Rather than pursuing the highest possible model accuracy, the focus is on generating insights that school administrators can use in practice.
+This project explores whether students at academic risk can be identified before the end of the semester to support earlier and more effective educational decisions.
 
 ---
 
 ## Business Problem
 
-Schools often identify struggling students only after final grades are released, leaving little opportunity for effective intervention.
+Schools need to identify students who require additional academic support before final grades are released.
 
-This project addresses the following business question:
+> **Business Question**
+>
+> Can students at risk be identified before the end of the semester so that schools can provide timely support?
 
-> **Can students at risk be identified before the end of the semester so that schools can provide timely support?**
-
-Instead of building a model for prediction alone, the goal is to help decision-makers allocate educational resources earlier and more effectively.
+The goal is to support earlier intervention and help school administrators allocate educational resources more effectively.
 
 ---
 
 ## Executive Summary
 
-Schools often identify struggling students only after final grades are released, leaving little time for effective intervention. This project explores whether students at academic risk can be identified earlier using historical student data.
+This project explored whether students at academic risk can be identified before the end of the semester using historical student data.
 
-The analysis combines exploratory data analysis with predictive modeling to identify students who may need additional support before the end of the semester. The results indicate that previous academic failures, study habits, and educational aspirations are closely associated with academic risk.
+The analysis found that previous academic failures, study habits, and educational aspirations were the strongest indicators of academic risk. Among the evaluated models, Logistic Regression achieved the most balanced overall performance for early identification.
 
-Rather than focusing only on model performance, this project emphasizes how analytical findings can support practical decisions. By identifying at-risk students earlier, schools can prioritize resources and provide timely interventions.
+These findings suggest that schools can identify at-risk students earlier and provide more targeted academic support before final grades are released.
 
 ---
 
 ## Project Objectives
 
-The objectives of this project are to:
+This project aims to:
 
-- Identify students who are at risk of poor academic performance before the end of the semester.
-- Explore the factors associated with student performance through exploratory data analysis.
-- Develop predictive models to support early identification of at-risk students.
-- Translate analytical findings into actionable business recommendations for school administrators.
+- Identify students at academic risk before the end of the semester.
+- Explore the key factors associated with student performance through exploratory data analysis.
+- Develop predictive models for early risk identification.
+- Translate analytical findings into actionable recommendations for school administrators.
 
 ---
 
 ## Dataset
 
-The analysis is based on the **Student Performance Dataset**, originally published by the **UCI Machine Learning Repository (UCI ML Repository)** and accessed through the **Kaggle UCI ML Repository mirror**.
+### Dataset at a Glance
 
-The dataset includes **649 Portuguese secondary school students** and **33 variables** covering:
+| Item | Value |
+|------|-------|
+| Dataset | Student Performance Dataset |
+| Students | 649 |
+| Variables | 33 |
+| Missing Values | 0 |
+| Prediction Task | Binary Classification |
 
-- Student demographics
-- Family background
-- Academic history
-- Study habits
-- Lifestyle factors
-- Final academic performance (G3)
+The dataset includes student demographics, family background, academic history, study habits, lifestyle factors, and final academic performance (G3).
 
-To better support educational decision-making, the original prediction target was redefined as:
+For this project, the target variable was redefined as:
 
 > **At-risk Student = Final Grade (G3) ≤ 12**
 
-This transforms the original regression problem into a binary classification task, allowing schools to identify students who may need academic support before the semester ends.
-
-The dataset contains no missing values and includes a broad range of academic, demographic, and behavioral variables, making it well suited for educational analytics and predictive modeling.
+This converts the original regression task into a binary classification problem, allowing earlier identification of students who may require additional academic support.
 
 **Source**
 
@@ -77,7 +74,7 @@ The dataset contains no missing values and includes a broad range of academic, d
 
 ## Methodology
 
-The analysis follows a Business Analytics workflow, starting from problem identification and ending with actionable recommendations for decision-makers.
+The overall workflow is illustrated below.
 
 ```mermaid
 flowchart TD
@@ -93,44 +90,52 @@ flowchart TD
 
 ## Key Findings
 
-### 1. Previous academic failures were the strongest indicator of at-risk students.
+### Previous Academic Failures
 
-Students with a history of academic failures consistently showed a significantly higher risk of poor final academic performance across exploratory analysis and predictive modeling.
+Students with previous academic failures were consistently more likely to become at-risk students.
 
----
-
-### 2. Study habits and educational aspirations were positively associated with student performance.
-
-Students who spent more time studying and planned to pursue higher education generally achieved better final grades, suggesting that both academic behavior and learning motivation contribute to academic success.
+This factor showed the strongest relationship with academic risk across both exploratory analysis and predictive modeling.
 
 ---
 
-### 3. Logistic Regression delivered the best overall performance for identifying at-risk students.
+### Study Habits & Educational Aspirations
 
-Among the evaluated models, Logistic Regression achieved the most balanced performance:
+Students who studied more and planned to pursue higher education generally achieved better academic outcomes.
 
-- Accuracy: **66.9%**
-- Recall: **68.5%**
-- F1-score: **69.9%**
-
-These results make it the most appropriate model for early identification within the scope of this project.
+These factors suggest that both learning behavior and motivation play an important role in academic performance.
 
 ---
 
-### 4. Student risk can be identified before the end of the semester, enabling earlier educational intervention.
+### Best Predictive Model
 
-Combining demographic, family, and academic information allows schools to recognize students who may require additional support before final grades are released, making proactive intervention and resource allocation possible.
+**Logistic Regression**
+
+| Metric | Score |
+|--------|------:|
+| Accuracy | 66.9% |
+| Recall | 68.5% |
+| F1-score | 69.9% |
+
+Logistic Regression achieved the most balanced performance among the evaluated models for early identification of at-risk students.
+
+---
+
+### Business Impact
+
+The analysis shows that students at academic risk can be identified before final grades are released.
+
+Earlier identification allows schools to prioritize support and intervene before academic performance declines further.
 
 ---
 
 ## Business Recommendations
 
-Based on the analytical findings, schools should:
+Based on the findings, the following actions are recommended:
 
 - Identify at-risk students as early as possible using predictive models.
 - Prioritize students with previous academic failures for early intervention.
-- Work with teachers and parents to better understand individual learning challenges.
-- Provide targeted support, such as tutoring, counseling, or personalized learning plans, before academic performance declines further.
+- Collaborate with teachers and parents to better understand individual learning needs.
+- Provide targeted support, such as tutoring, counseling, or personalized learning plans.
 
 ---
 
@@ -154,21 +159,21 @@ early-identification-at-risk-students/
 
 ## Future Improvements
 
-There are several ways this project could be expanded in the future.
+Future work could further improve the project by:
 
-- Include additional data, such as attendance patterns, behavioral records, or learning engagement, to better identify students at risk.
-- Test the models on data from different schools or academic years to see whether the results remain consistent.
-- Build an interactive dashboard so school administrators can monitor at-risk students and support earlier interventions.
-- Examine whether early interventions actually improve student outcomes and use the results to refine future support strategies.
+- Incorporating additional data, such as attendance records or learning engagement.
+- Validating the models using data from different schools or academic years.
+- Developing an interactive dashboard for monitoring at-risk students.
+- Evaluating whether early interventions improve student outcomes over time.
 
 ---
 
 ## Skills Applied
 
-- Business Analytics
+- Python (Pandas, Scikit-learn)
 - Exploratory Data Analysis (EDA)
 - Predictive Modeling
-- Machine Learning
-- Business Storytelling
-- Python (Pandas, Scikit-learn)
 - Data Visualization
+- Business Analytics
+- Business Storytelling
+- Machine Learning
